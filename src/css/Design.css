@@ -1,0 +1,224 @@
+
+
+.nav-font {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #7d848b;
+    /* Dark Gray */
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+.custom-font {
+    white-space: nowrap;
+    font-family: 'Pacifico', cursive;
+    font-weight: 900;
+    font-size: 30px;
+    color: linear-gradient(90deg, #8e44ad, #f39c12);
+    /* Gradient from purple to orange */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+@media only screen and (max-width: 368px) {
+    .custom-font {
+        font-size: 23px;
+    }
+}
+
+.custom-bg {
+       background-image: linear-gradient(to right, #357cff, #712ac9);
+}
+.custom-footer-bg {
+    background-image: linear-gradient(to right, #712ac9, #357cff);
+}
+.flex-bg{
+        background-color: #755b96; /* Deep purple for contrast */
+    
+}
+
+.navbar-nav {
+    margin-left: auto;
+    text-align: center;
+    padding-inline: 60px;
+    position: sticky;
+}
+
+.navbar-toggler:focus {
+    font-weight: 900;
+    outline: none;
+    /* Remove focus outline */
+    box-shadow: none;
+    /* Remove any shadow */
+}
+
+.nav-item a:hover {
+    color: rgb(243, 235, 240);
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* when the screen is small, clicking on toggler icon, item gets listed out below*/
+    .navbar-collapse {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background-image: linear-gradient(to right, #357cff, #712ac9);
+        ;
+    }
+}
+
+.intro {
+    display: flex;
+    height: 105vh;
+    /* Full viewport height */
+    background: linear-gradient(to right, #17062a, #b7b9bd);
+    /* Gradient background */
+    align-items: center;
+}
+
+@media only screen and (max-width:767px){
+    .intro {
+        background: linear-gradient(to bottom, #17062a, #b7b9bd);
+ }
+}
+/* Image styling */
+.intro-image {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+}
+
+.intro-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 4;
+}
+/* for max width 767  */
+@media only screen and (max-width: 767px) {
+    .intro {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .intro-image {
+        margin-top: 55px;
+        width: 100%;
+        height: auto;
+    }
+
+    .intro-text {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media only screen and (min-width:768px) and (max-width: 1024px){
+.intro{
+    height: 70vh;
+}
+.intro-image{
+    width: 90%;
+}
+.intro-text{
+    margin-top: 80px;
+  flex: 8;  
+}
+}
+
+.flipped-text {
+    transform: rotate(180deg);
+    display: inline-block;
+    /* Ensures rotation applies to just the text */
+    font-size: 40px;
+}
+
+.quote-text {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal
+}
+
+.qot {
+    flex: 2;
+}
+@media only screen and (min-width:368px){
+    .about-text {
+        padding-inline: 15%;
+    } 
+}
+@media only screen and (max-width:367px){
+    .about-text {
+        padding-inline: 7%;
+    } 
+}
+.header-text {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #02110e;
+    /* Teal */
+}
+
+.para-text {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.about button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #e67e22;
+    border-radius: 50px;
+    border: 1px solid white;
+    padding-block: 8px;
+
+}
+.about button:hover,button:focus{
+    color: black;
+}
+
+.form input,.form textarea , .form select{
+    background-color: rgb(215, 209, 209);
+    margin-bottom: 10px;
+}
+.icon-style img{
+    height: 60px;
+    width: 60px;
+}
+.contact-icon img{
+    height: 52px;
+    width: 62px;
+    /* margin: 0px; */
+    cursor: pointer;
+    
+}
+
+.move-up button{
+    position: fixed;
+    right: 15px;
+    bottom: 23px;
+    z-index: 5;
+    font-size: 29px;
+    background-color: rgb(5, 0, 16);
+    color: rgb(233, 233, 242);
+    border: none;
+    border-radius: 20px;
+}

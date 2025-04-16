@@ -1,0 +1,34 @@
+.skill-section {
+    
+    /* padding: 20px; */
+    border-radius: 10px;
+  }
+  
+  .skill-item {
+    margin-bottom: 10px;
+  }
+  
+  .skill-item .progress {
+    background-color: #e9ecef; /* Light gray bar background */
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+  
+  .skill-item .progress-bar {
+    background-color: #007bff; /* Blue bar color */
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .skill-item span {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  @media only source and (min-width:1024px) {
+    .skill-item{
+        width: 50%;
+    }
+  }
