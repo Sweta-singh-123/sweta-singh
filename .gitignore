@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+id_rsa
+id_rsa.pubgit remote remove origin
+
